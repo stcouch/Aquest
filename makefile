@@ -7,7 +7,7 @@ CFLAGS=-c
 # Path to the SDL frameworks, and framework extension.
 FP=/Library/Frameworks/
 FE=.framework
-FRAMEWORKS=-framework SDL2 SDL2_mixer SDL2_image
+FRAMEWORKS=-framework SDL2 
 LDLIBS=-L/Frameworks 
 
 all: aquest
