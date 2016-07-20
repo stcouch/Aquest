@@ -31,11 +31,9 @@ int main(int argc, const char * argv[]){
     	if (RunningWindow == NULL){
         	printf("Initialization failed. Error: $s\n", SDL_GetError());
         	return FAILURE;
-    	}
-    
-    //  PROBABLY HAVE TO BOOT UP PROGRAM IN THE FUTURE HERE
-    // init_program()
-    
+    	}    
+	// Enter main loop
+//	running_window_loop(); 
     
     // Enter into main loop.
 //        running_window_loop()

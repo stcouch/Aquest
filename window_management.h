@@ -9,6 +9,6 @@
 /* FUNCTION DEFINITIONS */
 bool init_window(void);
 bool load_background(void);
-
+void running_window_loop();
 
 #endif
