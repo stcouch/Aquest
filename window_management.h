@@ -8,6 +8,6 @@
 #include <SDL2_image/SDL_image.h>
 
 /* FUNCTION DEFINITIONS */
-bool init_window();
+SDL_Window *init_window(void);
 
 #endif
