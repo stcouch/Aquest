@@ -6,8 +6,9 @@
 #include <string.h>
 #include <SDL2/SDL.h>
 #include <SDL2_image/SDL_image.h>
-
 /* FUNCTION DEFINITIONS */
-SDL_Window *init_window(void);
+bool init_window(void);
+bool load_background(void);
+
 
 #endif

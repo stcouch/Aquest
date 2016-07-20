@@ -1,0 +1,7 @@
+TO DO:
+ - Further specify conventions to use
+ - Design data structures to use
+ - Create art, music, sound effects.
+
+
+and much more...
