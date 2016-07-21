@@ -22,6 +22,15 @@
 
 extern SDL_Window *RunningWindow;
 
+// Shut it down
+void close_game(){
+    // Idea: Create resource manager class so we can know what memory management needs to be done.
+    
+    
+    // Question: Does this deal with all the resources we've created that come from SDL???
+    SDL_Quit();
+}
+
 int main(int argc, const char * argv[]){
 	if (SDL_Init(SDL_INIT_EVERYTHING) < 0) {
         printf("SDL_Init failed: %s\n", SDL_GetError());
@@ -37,8 +46,8 @@ int main(int argc, const char * argv[]){
     
     // Enter into main loop.
 //        running_window_loop()
-    
-		return 0;
+    close_game();
+    return 0;
 }
 
 

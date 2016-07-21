@@ -16,11 +16,15 @@ LDLIBS=-L/Frameworks
 
 all: aquest
 
-aquest: main.o window_management.o
-	$(CC) main.o window_management.o -F${FP} -framework SDL2 -F${FP} -framework SDL2_image -o aquest
+aquest: main.o window_management.o audio.o
+	$(CC) main.o window_management.o audio.o -F${FP} -framework SDL2 -F${FP} -framework SDL2_image -F${FP} -framework SDL2_mixer -o aquest
+
+audio.o: audio.cpp
+	$(CC) $(CFLAGS) audio.cpp -o audio.o
 
 window_management.o: window_management.cpp
 	$(CC) $(CFLAGS) window_management.cpp -o window_management.o
+
 
 main.o: main.cpp 
 	$(CC) $(CFLAGS) main.cpp -o main.o
